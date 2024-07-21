@@ -69,8 +69,6 @@
 //     return acc = acc+curr;
 // },0);
 
-
-
 // console.log(newArr);
 
 // ---------
@@ -81,7 +79,7 @@
 
 //   let max = val[0]
 //   let min = val[0]
-  
+
 //     function shortest(val)
 //     {
 //       for(let i=0; i<val.length; i++)
@@ -100,9 +98,9 @@
 
 //    shortest(val);
 
-  // console.log(max,min);
+// console.log(max,min);
 
-  // -------------------
+// -------------------
 
 //   const users = [
 //     {firstName:'kds',lastName:'dkd',age:23},
@@ -124,7 +122,6 @@
 // console.log(newUser);
 
 // ----------------
-
 
 // const GITHUB_API = "https://api.github.com/users/akshaymarch7";
 
@@ -162,9 +159,7 @@
 //   return a + b;
 // }, [a,b])
 
-
 // sum(3,4);
-
 
 // import Counter from ".."
 // function App()
@@ -196,49 +191,19 @@
 // ----------------------------
 
 import React from "react";
-import ReactDOM from "react-dom/client"
+import ReactDOM from "react-dom/client";
 
-
-
-
-const parent = React.createElement(
-  "div", 
-  {class:"parent"}, 
-  [
-    React.createElement(
-      "div",
-    {class:'child1'},
-    [React.createElement(
-        "h1",
-        {class:'title'},
-        "I'am an H1 Tags"
-      ),
-      React.createElement(
-        "h2",
-        {class:'title'},
-        "I'am an H2 Tag"
-      )
-    ]
-  ),
-  React.createElement(
-    "div",
-  {class:'child2'},
-  [React.createElement(
-      "h1",
-      {class:'title'},
-      "I'am an H1 Tag"
-    ),
-    React.createElement(
-      "h2",
-      {class:'title'},
-      "I'am an H2 Tag"
-    )
-  ]
-)
-  ]
-);
+const parent = <div className="parent">
+  <div className="child">
+    <h1 className="title">I'am an H1 Tag</h1>
+    <h2 className="title">I'am an H2 Tag</h2>
+  </div>
+  <div className="child2">
+    <h1 className="title">I'am an H1 Tag</h1>
+    <h2 className="title">I'am an H2 Tag</h2>
+  </div>
+  </div>
 
 root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent)  
-
+root.render(parent);
